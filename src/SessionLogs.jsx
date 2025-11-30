@@ -10,7 +10,8 @@ import { Skeleton } from "@/components/ui/skeleton"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
 
-const API_URL = "http://127.0.0.1:5000/api/sessionLogs"
+import { API_BASE_URL } from './config'
+const API_URL = `${API_BASE_URL}/api/sessionLogs`
 
 function MessageBubble({ role, text }) {
   // Safety checks for props

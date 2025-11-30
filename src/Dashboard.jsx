@@ -608,7 +608,8 @@ export default function Dashboard() {
 
   const [collapsed, setCollapsed] = useState(false)
 
-  const BASE_URL = "http://127.0.0.1:5000/api"
+  import { API_BASE_URL } from './config'
+  const BASE_URL = `${API_BASE_URL}/api`
 
   // Load current user on mount
   useEffect(() => {

@@ -8,7 +8,8 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/comp
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Skeleton } from "@/components/ui/skeleton"
 
-const API_URL = "http://127.0.0.1:5000/api/phoneNumber"
+import { API_BASE_URL } from './config'
+const API_URL = `${API_BASE_URL}/api/phoneNumber`
 
 function formatPhone(num) {
   if (!num) return ""

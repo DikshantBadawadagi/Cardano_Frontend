@@ -22,7 +22,8 @@ import {
   Line,
 } from "recharts"
 
-const API_URL = "http://127.0.0.1:5000/api/timeDate"
+import { API_BASE_URL } from './config'
+const API_URL = `${API_BASE_URL}/api/timeDate`
 const API_HEADERS = {
   "ngrok-skip-browser-warning": "true",
   "Content-Type": "application/json",
