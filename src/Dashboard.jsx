@@ -570,6 +570,8 @@ import {
   getAllWorkspaces,
 } from "./utils/workspaceApi"
 import { getAllWorkflows } from "./utils/api"
+  import { API_BASE_URL } from './config'
+
 
 export default function Dashboard() {
   const location = useLocation()
@@ -608,7 +610,6 @@ export default function Dashboard() {
 
   const [collapsed, setCollapsed] = useState(false)
 
-  import { API_BASE_URL } from './config'
   const BASE_URL = `${API_BASE_URL}/api`
 
   // Load current user on mount
