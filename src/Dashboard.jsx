@@ -559,7 +559,7 @@ import Settings from "./Settings"
 import UploadPDFs from "./UploadPDFs"
 import EmailTool from "./EmailTool"
 import Call from "./Call"
-import Workspace from "./components/Workspace"
+import Workspace from "./components/workspace"
 import WorkflowSelector from "./components/WorkflowSelector"
 
 import { fetchCurrentUser, setCurrentWorkflow } from "./utils/api"
